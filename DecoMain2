@@ -1,0 +1,12 @@
+package static2;
+
+public class DecoMain2 {
+
+    public static void main(String[] args) {
+        String s = "hello java";
+        String deco = DecoUtil2.deco(s); // 정적 메서드는 클래스 명을 통해서 바로 접근이 가능하도록 해 줌
+
+        System.out.println("before: " + s);
+        System.out.println("after: " + deco);
+    }
+}
