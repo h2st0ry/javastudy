@@ -1,0 +1,9 @@
+package static2;
+
+public class DecoUtil2 {
+
+    public static String deco(String str) { // DecoUtil1과 동일하지만 메서드 앞에 static이 붙은 것이 차이점
+        String result = "*" + str + "*";
+        return result;
+    }
+}
