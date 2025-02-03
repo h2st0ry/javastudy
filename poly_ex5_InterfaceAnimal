@@ -1,0 +1,58 @@
+package poly.ex5;
+
+public interface InterfaceAnimal {
+    void sound();
+    void move();
+}
+
+//interface를 상속 받을 땐 implememts를 사용함
+
+//Cat
+package poly.ex5;
+
+public class Cat implements InterfaceAnimal {
+
+    @Override
+    public void sound() {
+        System.out.println("냐옹");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("고양이 이동");
+    }
+}
+
+
+//Caw
+package poly.ex5;
+
+public class Caw implements InterfaceAnimal {
+
+    @Override
+    public void sound() {
+        System.out.println("음메");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("소 이동");
+    }
+}
+
+
+//Dog
+package poly.ex5;
+
+public class Dog implements InterfaceAnimal {
+
+    @Override
+    public void sound() {
+        System.out.println("멍멍");
+    }
+
+    @Override
+    public void move() {
+        System.out.println("개 이동");
+    }
+}
